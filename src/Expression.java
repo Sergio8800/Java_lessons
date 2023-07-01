@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Expression {
     static Scanner scanner = new Scanner(System.in);
 
+
     public static void main(String[] args) {
         int num1 = getInt();
         int num2 = getInt();

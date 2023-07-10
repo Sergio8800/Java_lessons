@@ -20,6 +20,6 @@ public class phoneDict {
 
     }else if (simpol.containsKey(ch)){
         if (stack.isEmpty() || stack.pop() != simpol.get(ch));
-    }
+    }`
 
     }

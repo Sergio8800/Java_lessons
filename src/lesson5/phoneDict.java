@@ -34,6 +34,7 @@ public class phoneDict {
         }
 
     }
+
   /* вывод справочника в консоль */
     public static void printPhonebook(){
         System.out.println("Телефонный справочник: ");
@@ -49,6 +50,5 @@ public class phoneDict {
         if (result == null) return "абонент не найдей";
         return result;
     }
-
 
 }

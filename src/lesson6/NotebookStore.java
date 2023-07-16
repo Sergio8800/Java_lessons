@@ -8,10 +8,7 @@ package lesson6;
 //            Отфильтровать ноутбуки их первоначального множества и вывести проходящие по условиям.
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.*;
 
 class Notebook {
     String model;
@@ -64,6 +61,7 @@ public class NotebookStore {
         nbMemory.put(4, nb4);
         nbMemory.put(5, nb5);
         nbMemory.put(6, nb6);
+        printNote();
         System.out.println(FindNB(nbMemory));
 
     }
@@ -85,5 +83,12 @@ public class NotebookStore {
         }
         if (result == null) return "не найден с такими параментрами ";
         return resArr.toString();
+    }
+    public static void printNote(){
+        Map<Integer, Object> result = new LinkedHashMap<>();
+        System.out.println("NoteBooks: ");
+        for(Map.Entry<Integer, Notebook> k: nbMemory.entrySet()){
+            System.out.println(k.getValue());
+        }
     }
 }
